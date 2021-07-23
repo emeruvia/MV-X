@@ -1,6 +1,8 @@
 package dev.emg.mvx
 
 import com.google.gson.annotations.SerializedName
+import dev.emg.mvx.repository.models.Pokedex
+import dev.emg.mvx.repository.models.Pokemon
 
 data class PokedexResponse(
     val id: Long,
@@ -17,3 +19,19 @@ data class PokemonResponse(
     val name: String,
     val url: String
 )
+
+fun PokedexResponse.toPokedex(): Pokedex {
+    return Pokedex(
+        id = this.id,
+        name = this.name,
+        pokemonEntries = this.pokemonEntries.map { it.toPokemon() }
+    )
+}
+
+fun PokemonEntryResponse.toPokemon(): Pokemon {
+    return Pokemon(
+        entryNumber = this.entryNumber,
+        name = this.pokemonSpecies.name,
+        url = this.pokemonSpecies.url
+    )
+}

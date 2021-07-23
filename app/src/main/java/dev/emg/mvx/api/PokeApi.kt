@@ -9,6 +9,6 @@ interface PokeApi {
     suspend fun fetchNationalPokedex(): PokedexResponse
 
     companion object {
-        const val BASE_URL = "pokeapi.co/api/v2/"
+        const val BASE_URL = "https://pokeapi.co/api/v2/"
     }
 }
