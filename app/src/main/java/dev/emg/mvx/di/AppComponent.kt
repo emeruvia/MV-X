@@ -4,11 +4,19 @@ import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
 import dev.emg.mvx.MainActivity
+import dev.emg.mvx.di.modules.NetworkModule
+import dev.emg.mvx.di.modules.RepositoryModule
+import dev.emg.mvx.di.modules.ViewModelModule
 import dev.emg.mvx.mvvm.MVVMActivity
+import dev.emg.mvx.repository.Repository
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [NetworkModule::class])
+@Component(modules = [
+    NetworkModule::class,
+    RepositoryModule::class,
+    ViewModelModule::class
+])
 interface AppComponent {
 
     @Component.Factory

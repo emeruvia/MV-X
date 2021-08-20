@@ -1,4 +1,4 @@
-package dev.emg.mvx.di
+package dev.emg.mvx.di.modules
 
 import dagger.Module
 import dagger.Provides
