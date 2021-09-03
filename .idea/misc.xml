@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10185185185185185" />
+        <entry key="app/src/main/res/layout/activity_main_pokedex.xml" value="0.17222222222222222" />
+        <entry key="app/src/main/res/layout/activity_mvi_pokedex.xml" value="0.2074074074074074" />
+        <entry key="app/src/main/res/layout/activity_state_machine.xml" value="0.2074074074074074" />
       </map>
     </option>
   </component>

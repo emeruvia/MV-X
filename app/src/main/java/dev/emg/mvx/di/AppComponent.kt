@@ -7,8 +7,8 @@ import dev.emg.mvx.MainActivity
 import dev.emg.mvx.di.modules.NetworkModule
 import dev.emg.mvx.di.modules.RepositoryModule
 import dev.emg.mvx.di.modules.ViewModelModule
+import dev.emg.mvx.mvi_state_machine.MVIStateMachineActivity
 import dev.emg.mvx.mvvm.MVVMActivity
-import dev.emg.mvx.repository.Repository
 import javax.inject.Singleton
 
 @Singleton
@@ -26,4 +26,5 @@ interface AppComponent {
 
     fun inject(activity: MainActivity)
     fun inject(activity: MVVMActivity)
+    fun inject(activity: MVIStateMachineActivity)
 }

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import dev.emg.mvx.repository.models.Pokemon
 
-class PokedexAdapter() : ListAdapter<Pokemon, PokemonViewHolder>(DIFF_UTIL) {
+class PokedexAdapter : ListAdapter<Pokemon, PokemonViewHolder>(DIFF_UTIL) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder {
         return PokemonViewHolder.from(parent)

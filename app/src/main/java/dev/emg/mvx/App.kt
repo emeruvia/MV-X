@@ -3,6 +3,9 @@ package dev.emg.mvx
 import android.app.Application
 import dev.emg.mvx.di.AppComponent
 import dev.emg.mvx.di.DaggerAppComponent
+import timber.log.Timber.*
+
+import timber.log.Timber
 
 class App : Application() {
 
@@ -16,6 +19,9 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        if (BuildConfig.DEBUG) {
+            Timber.plant(DebugTree())
+        }
     }
 
 }
