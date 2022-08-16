@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MVX"
         android:usesCleartextTraffic="true">
-        <activity android:name=".mvi_state_machine.MVIStateMachineActivity"/>
+        <activity android:name=".mvi.MVIStateMachineActivity"/>
         <activity android:name=".mvvm.MVVMActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

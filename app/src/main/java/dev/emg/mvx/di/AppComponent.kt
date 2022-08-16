@@ -7,7 +7,7 @@ import dev.emg.mvx.MainActivity
 import dev.emg.mvx.di.modules.NetworkModule
 import dev.emg.mvx.di.modules.RepositoryModule
 import dev.emg.mvx.di.modules.ViewModelModule
-import dev.emg.mvx.mvi_state_machine.MVIStateMachineActivity
+import dev.emg.mvx.mvi.MVIStateMachineActivity
 import dev.emg.mvx.mvvm.MVVMActivity
 import javax.inject.Singleton
 

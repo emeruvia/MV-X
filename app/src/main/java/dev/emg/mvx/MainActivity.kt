@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import dev.emg.mvx.databinding.ActivityMainBinding
-import dev.emg.mvx.mvi_state_machine.MVIStateMachineActivity
+import dev.emg.mvx.mvi.MVIStateMachineActivity
 import dev.emg.mvx.mvvm.MVVMActivity
 
 class MainActivity : AppCompatActivity() {

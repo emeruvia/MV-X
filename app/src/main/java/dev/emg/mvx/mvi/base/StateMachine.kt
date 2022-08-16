@@ -1,4 +1,4 @@
-package dev.emg.mvx.mvi_state_machine
+package dev.emg.mvx.mvi
 
 abstract class StateMachine<Action, State> {
     protected abstract val stateCallback: StateCallback<State>

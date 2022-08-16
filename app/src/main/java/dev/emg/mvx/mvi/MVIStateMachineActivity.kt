@@ -1,4 +1,4 @@
-package dev.emg.mvx.mvi_state_machine
+package dev.emg.mvx.mvi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
